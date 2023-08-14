@@ -58,5 +58,3 @@ Manage Assets
     ${json_name} =    Store JSON    ${text}
     ${path} =    Store File    ${json_name}
     Log To Console    Retrieved file asset: ${path}
-
-    [Teardown]    Cleanup Assets
