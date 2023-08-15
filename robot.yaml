@@ -2,14 +2,11 @@
 # https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
 
 tasks:
-  Mario example:
-    robotTaskName: Mario example
-  Mario example part two:
-    robotTaskName: Mario example part two 
-  Py Manage Assets:
-    shell: python -m robocorp.tasks run tasks.py
+  # Task names here are used when executing the bots, so renaming these is recommended.
+  Run all tasks:
+    shell: python -m robot --report NONE --outputdir output --logtitle "Task log" tasks.robot
 
-devTasks: {}
+condaConfigFile: conda.yaml
 
 environmentConfigs:
   - environment_windows_amd64_freeze.yaml
@@ -17,10 +14,12 @@ environmentConfigs:
   - environment_darwin_amd64_freeze.yaml
   - conda.yaml
 
-ignoreFiles:
-  - .gitignore
-artifactsDir: output
+artifactsDir: output  
+
 PATH:
   - .
 PYTHONPATH:
   - .
+
+ignoreFiles:
+  - .gitignore
