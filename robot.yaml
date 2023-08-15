@@ -2,8 +2,10 @@
 # https://github.com/robocorp/rcc/blob/master/docs/recipes.md#what-is-in-robotyaml
 
 tasks:
-  RF Manage Assets:
-    robotTaskName: Manage Assets
+  Mario example:
+    robotTaskName: Mario example
+  Mario example part two:
+    robotTaskName: Mario example part two 
   Py Manage Assets:
     shell: python -m robocorp.tasks run tasks.py
 
