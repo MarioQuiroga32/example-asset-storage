@@ -7,6 +7,7 @@ Library             RPA.Robocorp.Storage
 
 *** Tasks ***
 Minimal task
+    Mario example
     Mario example part two
     Log    Done.
 
