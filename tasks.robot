@@ -15,7 +15,7 @@ Minimal task
 *** Keywords ***
 Mario example
     # If I create an asset named MarioExample this works
-    ${text}=    Get Text Asset    MarcoExample
+    ${text}=    Get Text Asset    MarioExample
     Log To Console    ${text}
 
 Mario example part two
